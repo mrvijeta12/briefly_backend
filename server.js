@@ -10,6 +10,10 @@ const PORT = 5000;
 
 app.use(cors());
 app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.send("Brifly API is running...");
+});
 app.use("/api/auth", authRouter);
 app.use("/api/scrape", scraperRouter);
 app.use("/api/stories", storyRouter);

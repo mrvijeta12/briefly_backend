@@ -9,7 +9,7 @@ const app = express();
 const PORT = 5000;
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://briefly-backend-blond.vercel.app/",
+  "https://briefly-frontend-phi.vercel.app",
 ];
 
 const corsOptions = {
